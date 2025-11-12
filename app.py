@@ -69,7 +69,7 @@ if st.button("Get Answer"):
         st.write(f"Most relevant page: {url}")
 
         # Use OpenAI (or any LLM) for answer
-        openai.api_key = 'YOUR_API_KEY'
+        #openai.api_key = 'YOUR_API_KEY'
         prompt = f"Answer this question based on the following content:\n\n{content}\n\nQuestion: {query}\nAnswer:"
         
         response = openai.ChatCompletion.create(
